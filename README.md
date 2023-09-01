@@ -42,7 +42,7 @@ I'm a big fan of ohmyzsh. So I'll be using that as my shell. It is also nice to 
 I have complied all these in `setup.sh` file. All you need to do is clone the my repo and run `setup.sh` file, using following commands.
 
 ```bash
-git clone https://github.com/brownLlama/ssh_gcp_vm.git
+git clone https://github.com/brownLlama/ssh-gcp-vm.git
 ```
 
 Goto the downloaded directory
