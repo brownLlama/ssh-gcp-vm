@@ -27,7 +27,15 @@ cat | pbcopy
 
 I would assume that you know how to create a VM Instance. While creating the VM in the security, add your SSH public key there, so you can SSH the VM using your terminal / VSCode.
 
-## Step 3: Installing cool features
+## Step 3: Connecting to VM via Terminal.
+
+If you want to SSH to VM via Terminal just run the following command.
+
+```bash
+ssh -i <NAME_OF_YOUR_VM> <USERNAME>@<EXTERNAL_IP_ADDRESS>
+```
+
+## Step 4: Installing cool features
 
 I'm a big fan of ohmyzsh. So I'll be using that as my shell. It is also nice to have autosuggestions and syntax highlight in the terminal, so I'll add those too. I'll also install homebrew to install `RM Improved (RIP)` and `Exa`. RIP is improved version of rm, as the name suggests. It will keep the removed files/directory in temp storage and we are able to retrive the accidently deleted files and dir. Exa gives a visual performance when running `ls` command. Never liked the UI version of git in VSCode, but instead I use LazyGit for all git commands. At last few alias, that I frequently use.
 
@@ -51,7 +59,7 @@ Run the `setup.sh` file
 
 Once the setup is complete it will exit the VM.
 
-## Step 4: Creating SSH Config File
+## Step 5: Creating SSH Config File
 
 In your VSCode install `Remote - SSH` and `Remote Explorer` Extensions. Now press `Cmd + Shift + p` and search for "Remote SSH: Open SSH Configuration file" and select your ".ssh/config" directory. Add the following in your config file.
 
@@ -64,14 +72,6 @@ Host <NAME_OF_YOUR_VM>
 
 Save and exit.
 
-## Step 5: Connecting to VM via VSCode.
+## Step 6: Connecting to VM via VSCode.
 
 Hit again `Cmd + Shift + p` and search for "Remote SSH: Connect to Host" and select your Host Name and that should do it.
-
-## (Optional) Step 6: Connecting to VM via Terminal.
-
-If you want to SSH to VM via Terminal just run the following command.
-
-```bash
-ssh -i <NAME_OF_YOUR_VM> <USERNAME>@<EXTERNAL_IP_ADDRESS>
-```
