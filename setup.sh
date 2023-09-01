@@ -11,7 +11,7 @@ echo "source $ZSH/oh-my-zsh.sh" >>~/.zshrc
     echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'
 ) >>/home/sanu_maharjan/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-brew install rm-improved exa jesseduffield/lazygit/lazygit
+brew install rm-improved exa lazygit
 
 # Alias
 echo 'function mdir {
