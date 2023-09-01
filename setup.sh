@@ -14,9 +14,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install rm-improved exa lazygit
 
 # Alias
-alias c=clear
-alias rm=rip
-alias lg="lazygit"
-alias ls="exa --group-directories-first --icons"
-alias l="exa -l -a --group-directories-first --icons"
+echo "alias c=clear" >>~/.zshrc
+echo "alias rm=rip" >>~/.zshrc
+echo "alias lg="lazygit"" >>~/.zshrc
+echo "alias ls='exa --group-directories-first --icons'" >>~/.zshrc
+echo "alias l='exa -l -a --group-directories-first --icons'" >>~/.zshrc
 . ~/.zshrc
