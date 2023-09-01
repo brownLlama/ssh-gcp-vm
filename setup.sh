@@ -17,11 +17,9 @@ brew install rm-improved exa lazygit
 echo 'function mdir {
    mkdir -p $1
    cd $1
-}'
-
+}
 alias c=clear
-alias rm=rip
+alias rm=rip'
 alias ls='exa --group-directories-first --icons'
 alias l='exa -l -a --group-directories-first --icons'
 . ~/.zshrc
-exit

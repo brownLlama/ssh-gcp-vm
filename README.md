@@ -51,13 +51,13 @@ Run the `prep.sh` file.
  ./ssh-gcp-vm/./prep.sh
 ```
 
-Once it runs the prep.sh, it will exit the VM. Connect to VM using Step 3 again and run the following to run `setup.sh`
+Once it runs the prep.sh, exit the VM by typing `exit`. Connect to VM using Step 3 again and run the following to run `setup.sh`
 
 ```bash
  ./ssh-gcp-vm/./setup.sh
 ```
 
-Again, when the setup is completed it will exit the VM.
+Again, when the setup is completed, exit the VM again by typing `exit`.
 
 ## Step 5: Creating SSH Config File
 
