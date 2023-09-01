@@ -39,25 +39,25 @@ ssh -i <NAME_OF_YOUR_VM> <USERNAME>@<EXTERNAL_IP_ADDRESS>
 
 I'm a big fan of ohmyzsh. So I'll be using that as my shell. It is also nice to have autosuggestions and syntax highlight in the terminal, so I'll add those too. I'll also install homebrew to install `RM Improved (RIP)` and `Exa`. RIP is improved version of rm, as the name suggests. It will keep the removed files/directory in temp storage and we are able to retrive the accidently deleted files and dir. Exa gives a visual performance when running `ls` command. Never liked the UI version of git in VSCode, but instead I use LazyGit for all git commands. At last few alias, that I frequently use.
 
-I have complied all these in `setup.sh` file. All you need to do is clone the my repo and run `setup.sh` file, using following commands.
+I have complied all these in two files, namely `prep.sh` and `setup.sh` file. All you need to do is clone the my repo and run those two files, using following commands.
 
 ```bash
 git clone https://github.com/brownLlama/ssh-gcp-vm.git
 ```
 
-Goto the downloaded directory
+Run the `prep.sh` file.
 
 ```bash
-cd ssh_gcp_vm
+ ./ssh-gcp-vm/./prep.sh
 ```
 
-Run the `setup.sh` file
+Once it runs the prep.sh, it will exit the VM. Connect to VM using Step 3 again and run the following to run `setup.sh`
 
 ```bash
-./setup.sh
+ ./ssh-gcp-vm/./setup.sh
 ```
 
-Once the setup is complete it will exit the VM.
+Again, when the setup is completed it will exit the VM.
 
 ## Step 5: Creating SSH Config File
 
